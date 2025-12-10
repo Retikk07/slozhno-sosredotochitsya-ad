@@ -18,6 +18,7 @@
   --listGap: 20px;
   --pointRec: -19px;
   --marginAfterHeader: 40px;
+  --marginTopFooter: 40px;
   --paddingTop: 50px;
   --clamp-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --clamp-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -29,6 +30,7 @@
     --margin: 20px;
     --padding: 20px;
     --top: 20px;
+    --marginTopFooter: 60px;
     --marginAfterHeader: 60px;
     --paddingTop: 80px;
   }

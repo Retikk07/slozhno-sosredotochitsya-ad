@@ -1,4 +1,4 @@
-.page {  
+.page { 
   min-block-size: 100vh;
   background-color: var(--background-color);
   background-position: center;
@@ -10,6 +10,7 @@
   font-weight: 400;
   line-height: var(--line-height);
   color: var(--text-color);
+  height: 6770px;
 }
 
 .header {
@@ -30,15 +31,15 @@
   padding-right: 38px;
   position: absolute;
   text-transform: uppercase;
-  top: var(--top); 
+  top: var(--top);
   gap: var(--gap);
 }
 
 .header__rec::after {
   margin-block-start: 8px;
   margin-inline-end: var(--pointRec);
-  box-shadow: 0 0 4px 2px var(--accent-color);;
-  display: block; 
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  display: block;
   content: "";
   inline-size: 9px;
   block-size: 9px;
@@ -192,8 +193,7 @@ main {
 .section__what {
   margin: 0px var(--margin);
   padding-top: var(--paddingTop);
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--listGap);
 }
 
@@ -239,6 +239,7 @@ main {
 }
 
 .footer {
+  margin-top: var(--marginTopFooter);
   min-block-size: 100vh;
   padding: 0 var(--padding);
   position: relative;
@@ -256,6 +257,10 @@ main {
 }
 
 @media (width >= 768px) {
+
+  .page {
+    height: 5850px;
+  }
 
   .header__text {
     max-inline-size: 364px;
@@ -330,6 +335,10 @@ main {
 
 @media (width >= 1024px) {
 
+  .page {
+    height: 5008px;
+  }
+
   .header__theme-menu {
     align-self: start;
     justify-self: center;
@@ -344,10 +353,9 @@ main {
     max-block-size: 71px;
   }
 
-  .section__what {
+  .section__what-card {
     display: grid;
-    grid-template-columns: 33% 67%;
-    padding-inline-end: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .section__why .section__title {
