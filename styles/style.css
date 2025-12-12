@@ -10,7 +10,6 @@
   font-weight: 400;
   line-height: var(--line-height);
   color: var(--text-color);
-  height: 6770px;
 }
 
 .header {
@@ -259,10 +258,6 @@ main {
 
 @media (width >= 768px) {
 
-  .page {
-    height: 5850px;
-  }
-
   .header__text {
     max-inline-size: 364px;
     max-block-size: 117px;
@@ -335,10 +330,6 @@ main {
 }
 
 @media (width >= 1024px) {
-
-  .page {
-    height: 5008px;
-  }
 
   .header__theme-menu {
     align-self: start;
